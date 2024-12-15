@@ -1,0 +1,39 @@
+/* Home Page Styles */
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+   
+  }
+  
+  .offer-card {
+    background-color: #464646;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+  }
+  
+  .card img{
+    width: 100%; /* Ensures the image takes full width of the card */
+    height: 600px; /* Fixed height for consistency across all cards */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    
+    border-radius: 10px;
+  }
+  .offer-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .offer-card p {
+    color: #666;
+  }
+  
+  .offer-card:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  

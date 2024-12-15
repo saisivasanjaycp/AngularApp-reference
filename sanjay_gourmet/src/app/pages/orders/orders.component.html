@@ -1,0 +1,37 @@
+<div class="orders-container">
+  <h1>Your Orders</h1>
+
+  <div *ngIf="orders.length === 0">
+    <p>No orders yet. Please add items to your order list.</p>
+  </div>
+
+  <table *ngIf="orders.length > 0" class="orders-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>{{ order.name }}</td>
+        <td>{{ order.quantity }}</td>
+        <td>{{ order.price | currency }}</td>
+        <td>{{ order.total | currency }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="removeOrder(order.name)">
+            Remove
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="orders.length > 0" class="total-price">
+    <h3>Total: {{ getTotalPrice() | currency }}</h3>
+    <button class="btn btn-success">Place Order</button>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+/* About Page Styling */
+.about-container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('/images/about.png') no-repeat center center fixed; /* Path adjusted to public folder */
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .about-content {
+    max-width: 1300px;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better readability */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .about-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-content h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .about-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-content ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-content ul li strong {
+    color: #ffcc00; /* Highlighted text for food categories */
+  }
+  

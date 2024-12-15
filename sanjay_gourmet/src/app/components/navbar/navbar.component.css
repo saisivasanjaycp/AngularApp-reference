@@ -1,0 +1,96 @@
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, rgba(255, 0, 102, 1) 0%, rgba(255, 102, 0, 1) 100%);
+    padding: 10px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo Image */
+.navbar-logo {
+    height: 150px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    display: flex;
+    align-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 5px 10px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+/* Navbar Button Links */
+.navbar-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Navbar Buttons */
+.btn-nav {
+    background-color: #ffffff;
+    border: none;
+    color: rgba(255, 102, 0, 1);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Hover Effect */
+.btn-nav:hover {
+    background-color: #e4c80d;
+    box-shadow: 0 4px 12px rgba(255, 102, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+/* Active Button - Applied only when active */
+.btn-nav.active {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+/* Remove Hover on Active Button */
+.btn-nav.active:hover {
+    background-color: #ffcc00;
+    box-shadow: none;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .btn-nav {
+        font-size: 1.2rem;
+        padding: 12px 20px;
+    }
+}
